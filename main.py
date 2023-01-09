@@ -6,10 +6,6 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token='5821246240:AAH7dM1abnPX85pAMHIhkXNI3lf1nz1-1Vs')
 dp = Dispatcher(bot)
 
-# async def on_startup(_):
-#     print('Bot online')
-
-
 channel_url = 'https://t.me/TESt_my_bo'
 channel_id = '@TESt_my_bo'
 chat_id = '@My_put_Python_Developer'
@@ -21,11 +17,6 @@ btn.add(kanal)
 
 def check_sub_channel(chat_member):
     return chat_member['status'] != 'left'
-
-
-# @dp.message_handler(content_types=['new_chat_member'])
-# async def user_joined(message: types.Message):
-#     await message.answer("Hush kelibsiz!\nGruppaga yozish uchun kanalga azo bo'ling", reply_markup=btn)
 
 
 @dp.message_handler()
