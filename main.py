@@ -3,12 +3,12 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import logging
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token='5821246240:AAH7dM1abnPX85pAMHIhkXNI3lf1nz1-1Vs')
+bot = Bot(token='TOKEN')
 dp = Dispatcher(bot)
 
-channel_url = 'https://t.me/TESt_my_bo'
-channel_id = '@TESt_my_bo'
-chat_id = '@My_put_Python_Developer'
+channel_url = 'channel url'
+channel_id = 'channel id'
+chat_id = 'Droup id'
 
 btn = InlineKeyboardMarkup(row_width=2)
 kanal = InlineKeyboardButton(text='Kanal', url=channel_url)
